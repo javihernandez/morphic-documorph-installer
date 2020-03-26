@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?define SourceDir="."?>
+  <Module Id="Morphic.DocuMorph" Language="1033" Version="1.0.0.0">
+    <Package Id="7560a007-5cd8-4e3f-8a07-e93949911a1c"
+             Manufacturer="Raising the Floor"
+             InstallerVersion="405"
+             InstallPrivileges="elevated"
+             InstallScope="perMachine" />
+
+    <ComponentGroupRef Id="DocuMorphDirectory"/>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <!-- <Directory Id="WindowsFolder" /> -->
+      <Directory Id="DocuMorphDirectory" />
+    </Directory>
+  </Module>
+</Wix>
